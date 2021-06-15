@@ -1,0 +1,21 @@
+{
+  "name": "lambda-container-example",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.77",
+    "@types/node": "^15.12.1",
+    "@types/node-fetch": "^2.5.10",
+    "esbuild": "^0.12.8",
+    "typescript": "^4.3.2"
+  },
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --outfile=build/index.cjs --platform=node"
+  },
+  "dependencies": {
+    "algoliasearch": "^4.9.1",
+    "node-fetch": "^2.6.1"
+  }
+}
